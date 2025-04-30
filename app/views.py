@@ -1,7 +1,8 @@
 from django.shortcuts import render
+from .models import *
 
-def app(request):
-    # This is a simple view that renders a template
-    return render(request, 'index.html')
+def aadhar(request):
+    data=Aadhar.objects.all()
+    print(data.values())
 
 # Create your views here.

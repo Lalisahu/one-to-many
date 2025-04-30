@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app import views  # Import the views from your app
-
+  # Import your models if needed
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('app/', views.app, name='app'),  # Add this line to include the app's URLs
+    path('aadhar/', views.aadhar, name='aadhar'),
+    #path('citizan/', views.citizan, name='citizan'),
 ]
